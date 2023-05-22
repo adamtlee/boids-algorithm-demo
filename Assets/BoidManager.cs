@@ -4,12 +4,18 @@ using UnityEngine;
 
 public class BoidManager : MonoBehaviour
 {
-
+    public static BoidManager BM;
     public GameObject insectPrefab; 
     public int numInsect = 20; 
     public GameObject[] allInsect; 
     public Vector3 swarmLimits = new Vector3(5, 5, 5); 
     // Start is called before the first frame update
+
+    [Header ("Insect Settings")]
+    [Range(0.0f, 5.0f)]
+    public float minSpeed; 
+    [Range(0.0f, 5.0f)]
+    public float maxSpeed; 
     void Start()
     {
         allInsect = new GameObject[numInsect]; 
@@ -20,6 +26,7 @@ public class BoidManager : MonoBehaviour
                                                                   Random.Range(-swarmLimits.z, swarmLimits.z));
             allInsect[i] = Instantiate(insectPrefab, pos, Quaternion.identity); 
         }
+        BM = this;
     }
 
     // Update is called once per frame
