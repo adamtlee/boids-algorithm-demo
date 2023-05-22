@@ -1,0 +1,41 @@
+# Unity specific
+/[Ll]ibrary/
+/[Tt]emp/
+/[Oo]bj/
+/[Bb]uild/
+/[Bb]uilds/
+/[Ll]ogs/
+/[Uu]nity[Tt]est[Rr]esults/
+
+# Playmode test-specific
+/[Tt]est[Rr]esult/
+
+# Asset-specific
+/[Aa]ssets/AssetStoreTools*
+
+# Auto-generated VS/MD solution and project files
+ExportedObj/
+.consulo/
+*.csproj
+*.unityproj
+*.sln
+*.suo
+*.tmp
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+
+# Unity3D generated meta files
+*.pidb.meta
+
+# Unity3D Generated File On Crash Reports
+sysinfo.txt
+
+# Builds
+/build/
+
+# Visual Studio Code generated files
+.vscode/
